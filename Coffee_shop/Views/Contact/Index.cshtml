@@ -1,0 +1,61 @@
+@model Coffee_shop.Models.Contact
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "_MobiriseLayout";
+}
+
+<section class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h3>Contact Us</h3>
+            <form asp-action="Index" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Subject</label>
+                    <input asp-for="Subject" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea asp-for="Message" class="form-control" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "_MobiriseLayout";
+}
+
+<section data-bs-version="5.1" class="form7 cid-tsJ8wGtENs" id="form7-q">
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Get in Touch</strong></h3>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form">
+                <form method="POST" class="mbr-form form-with-styler mx-auto">
+                    <p class="mbr-text mbr-fonts-style align-center mb-4 display-7">One of our team will be in contact with you shortly.</p>
+                    <div class="dragArea row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form7-q">
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-form7-q">
+                        </div>
+                        <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3"><textarea type="text" class="form-control" rows="5" placeholder="Message"></textarea></div>
+                        <div class="col-auto mbr-section-btn align-center"><button type="submit" class="btn btn-primary display-4">Send</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
