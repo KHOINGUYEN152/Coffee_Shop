@@ -1,0 +1,13 @@
+﻿Coffee_shop/Views/Shared/_Layout.cshtml
+Coffee_shop/Views/Shared/_Layout.cshtml.css
+Coffee_shop/Views/Shared/_MobiriseLayout.cshtml
+Coffee_shop/Views/Shared/_ValidationScriptsPartial.cshtml
+Coffee_shop/Views/Shared/Error.cshtml
+Coffee_shop/wwwroot/cart.html
+Coffee_shop/wwwroot/contact.html
+Coffee_shop/wwwroot/detail.html
+Coffee_shop/wwwroot/favicon.ico
+Coffee_shop/wwwroot/index.html
+Coffee_shop/wwwroot/shipping.html
+Coffee_shop/wwwroot/shop.html
+Coffee_shop/wwwroot/shopping-cart.html
