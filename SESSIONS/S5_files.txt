@@ -1,0 +1,2 @@
+﻿Coffee_shop/Views/Account/Login.cshtml
+Coffee_shop/Views/Account/Register.cshtml
