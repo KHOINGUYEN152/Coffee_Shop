@@ -1,0 +1,87 @@
+@model Coffee_shop.Models.CheckoutPageViewModel
+@{
+    Layout = "_MobiriseLayout";
+}
+<form asp-action="Index" asp-controller="Checkout" method="post" role="form">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+<section data-bs-version="5.1" class="form6 cid-tsFfsp7eqK" id="form6-n">
+    
+     
+ <div class="container">
+    <div class="mt-5">
+        <!-- Checkout Panel Information-->
+        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-4">
+            <h3 class="fs-5 fw-bolder m-0 lh-1">Shipping Address</h3>
+        </div>
+        <div class="row">
+            <!-- Full name -->
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="Billing_FullName" class="form-label">Full name</label>
+                    <input asp-for="Billing.FullName" class="form-control" id="Billing_FullName" />
+                    <span asp-validation-for="Billing.FullName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Email-->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="Billing_Email" class="form-label">Email</label>
+                    <input asp-for="Billing.Email" class="form-control" id="Billing_Email" />
+                    <span asp-validation-for="Billing.Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Phone-->
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="Billing_PhoneNumber" class="form-label">Phone</label>
+                    <input asp-for="Billing.PhoneNumber" class="form-control" id="Billing_PhoneNumber" />
+                    <span asp-validation-for="Billing.PhoneNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Address-->
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="Billing_ShippingAddress" class="form-label">Address</label>
+                    <input asp-for="Billing.ShippingAddress" class="form-control" id="Billing_ShippingAddress" placeholder="123 Some Street Somewhere" />
+                    <span asp-validation-for="Billing.ShippingAddress" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Payment method -->
+            <div class="col-12 mt-3">
+                <div class="form-group">
+                    <label for="Billing_PaymentMethod" class="form-label">Payment method</label>
+                    <select asp-for="Billing.PaymentMethod" class="form-control" id="Billing_PaymentMethod">
+                        <option value="Cash">Cash on Delivery</option>
+                        <option value="CreditCard">Credit Card</option>
+                        <option value="PayPal">PayPal</option>
+                    </select>
+                    <span asp-validation-for="Billing.PaymentMethod" class="text-danger"></span>
+                </div>
+            </div>
+ 		<!-- Address-->
+        </div>
+
+        <div class="col-auto mbr-section-btn align-center">
+            <button type="submit" class="btn btn-primary display-4">Place Order</button>
+        </div>
+
+    </div>
+</div>
+</section>
+    </form>
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/parallax/jarallax.js"></script>
+    <script src="~/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="~/assets/ytplayer/index.js"></script>
+    <script src="~/assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="~/assets/theme/js/script.js"></script>
+}
